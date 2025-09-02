@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GA4 Debug</title>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        page_type: "test",
+      });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,5 +24,14 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <h1>GA4 Debug</h1>
+    <div class="ga-intersection-observer" data-ga-value="入会ボタン1">
+      <a onclick="trEventClick(this,'ホーム','ヘッダー','入会ボタン1')" href="#">a tag button1 </a>
+    </div>
+    <div class="ga-intersection-observer" data-ga-value="入会ボタン2">
+      <a onclick="trEventClick(this,'ホーム','ヘッダー','入会ボタン2')" href="#">a tag button2 </a>
+    </div>
+
+    <a href="hoge.html">hogeページへ移動</a>
   </body>
 </html>
+
