@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA4 Debug hoge</title>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        page_type: "test",
+      });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-596VNRP7');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596VNRP7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <h1>GA4 Debug hoge2</h1>
+    <div class="ga-intersection-observer" data-ga-value="入会ボタン1">
+      <a onclick="trEventClick(this,'ホーム','ヘッダー','入会ボタン1')" href="#">a tag button_1 </a>
+    </div>
+    <div class="ga-intersection-observer" data-ga-value="入会ボタン2">
+      <a onclick="trEventClick(this,'ホーム','ヘッダー','入会ボタン2')" href="#">a tag button_2 </a>
+    </div>
+    
+    <h3>hogehoge遷移</h3>
+    <a href="index.html">index.html</a>
+    <a href="hoge.html">hoge.html</a>
+  </body>
+</html>
